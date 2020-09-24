@@ -1,19 +1,33 @@
 <?php
+    $api_key = "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";
 
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $body = $_POST['body'];
+require 'vendor/autoload.php';
+use Dotenv\Dotenv;
 
-    $email_from = 'Keith Portfolio';
-    $email_subject = 'New Message From Portfolio';
-    $email_body = "Emailer: $email\n".
-                  "Body: $body";
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
-    $to = 'keithritterportfolio@gmail.com';
-    $headers = "From: $email_from \r\n";
-    $headers .= "Reply-To: $email";
+$emailer = $_POST['email'];
+$subject = $_POST['subject'];
+$body = $_POST['body'];
+$message = "From: $emailer\n" . "Message: $message";
 
-    mail($to,$email_subject,$email_body,$headers);
 
-    header("location: index.html");
+$email = new \SendGrid\Mail\Mail(); 
+$email->setFrom("keithritterportfolio@gmail.com", "Portfolio Inquiry");
+$email->setSubject($subject);
+$email->addTo("keithritterportfolio@gmail.com", "Portfolio Inquiry");
+$email->addContent("text/plain", $message);
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+);
+$sendgrid = new \SendGrid($_ENV["SENDGRID_API_KEY"]);
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+}
 ?>
