@@ -3,3 +3,4 @@
 vendor
 html/contact.php
 html/sendgrid.env
+*.php
