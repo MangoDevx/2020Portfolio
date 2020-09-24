@@ -110,6 +110,8 @@ p{
 #contact-form {
     background-color: #343A40 !important;
     max-width: 50rem;
+    width: 30vw !important;
+    height: 25vw !important;
     padding: 2rem;
     border-radius: 1%;
     margin:auto;
