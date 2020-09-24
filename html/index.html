@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Keith Ritter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Keith Ritter - Computer Science Student & Tech Enthusiast">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="x" />
+</head>
+
+<body>
+    <div class="container-fluid px-5 py-2 shadow">
+        <div class="row justify-content-center blacktext">
+            <div class="col">
+                <p style="font-size: 24px">Keith Ritter</p>
+            </div>
+            <p style="font-size: 24px">Socials:</p>
+            <a href="https://www.github.com/MangoDevx" target="_" class="socials" style="max-height: 36px;">
+                <img src="assets/github.png"></a>
+            <a href="https://www.instagram.com/keithaaron1" target="_" class="socials">
+                <img src="assets/instagram.png"></a>
+            <a href="https://www.reddit.com/user/MangoOverflow" target="_" class="socials">
+                <img src="assets/reddit.png"></a>
+        </div>
+    </div>
+    <div id="ContentSectionA" class="justify-content-center">
+        <img class="portraitphoto img-circle" src="assets/photo.png" alt="I am on the right"></img>
+        <div>
+            <p class="portraitcaption"><span style="color: #ea5455; font-weight: bold;">Hello!</span> I am Keith, an
+                enthusiastic computer science college student.<br>My main
+                area of focus is software development, mainly related to designs that require<br>
+                the use or application of physics. My strongest language is C# on the .NET framework.<br>I have
+                also learned some things in other directions.This includes web development, Angular,<br>ASP.Net Core,
+                EntityFramework, and ML.Net.
+            </p>
+        </div>
+    </div>
+    <div id="ContentSectionB">
+        <h1 id="accentColor" style="text-decoration: underline; padding-top: 2rem; padding-bottom: 2rem;">FoSS Projects
+        </h1>
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="margin-top: 6rem;">
+                <div class="contentCard main">
+                    <img class="contentCard-img shadow" src="assets/SmartPixelGUI.png">
+                    <div class="contentCard-bottom rounded-bottom shadow">
+                        <p class="contentCard-content">
+                            This is SmartPixel. A GUI program I made that will take ANY image and redrawn it into a
+                            visually generated color palette.
+                            This application represents knowledge in memory mapping, random generation, .NET WPF, and
+                            design.
+                        </p>
+                        <a href="https://github.com/MangoDevx/SmartPixel" target="_"
+                            class="btn btn-primary contentCard-button">
+                            View me!
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="contentCard sub">
+                        <img class="contentCard-img shadow" src="assets/MangoPadGUI.png">
+                        <div class="contentCard-bottom rounded-bottom shadow">
+                            <p class="contentCard-content">
+                                Mangopad is a metro style text editor with features you'd expect from a standard
+                                notepad. Including Auto-Save and Quick Print as well.
+                                This application represents knowledge in WPF, MVVM binding, and general C#
+                                knowledge.<br>
+                                <a href="https://github.com/MangoDevx/Mangopad" target="_"
+                                    class="btn btn-primary contentCard-button">
+                                    View me!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contentCard sub">
+                        <img class="contentCard-img shadow" src="assets/VKBGraph.png">
+                        <div class="contentCard-bottom rounded-bottom shadow">
+                            <p class="contentCard-content">
+                                VKBGraph is a full stack application that displays keypresses per minute onto a locally
+                                hosted SPA.
+                                This application represents knowledge in web dev, Angular, SPA development, and
+                                full-stack application.<br>
+                                <a href="https://github.com/MangoDevx/Keyboard-Frequency-Graph" target="_"
+                                    class="btn btn-primary contentCard-button">
+                                    View me!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contentCard sub">
+                        <img class="contentCard-img shadow" src="assets/BubbleSort.png">
+                        <div class="contentCard-bottom rounded-bottom shadow">
+                            <p class="contentCard-content">
+                                BSV is an application that will display a bubble sort to you in a console.
+                                I made this application to help display and provide understanding for the algorithm.
+                                This application represents knowledge in general C#, and sorting algorithms.<br>
+                                <a href="https://github.com/MangoDevx/Bubble-Sort-Visualizer" target="_"
+                                    class="btn btn-primary contentCard-button">
+                                    View me!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ContentSectionC">
+        <h1 id="accentColor" style="text-decoration: underline; padding-top: 2rem; padding-bottom: 2rem;">Email Me!</h1>
+        <div class="container">
+            <form id="contact-form" method="post" action="contact.php" role="form" class="shadow">
+                <div class="form-group">
+                    <label for="InputEmail">Email address</label>
+                    <input name="email" type="email" class="form-control" id="InputEmail"
+                        aria-describedby="InputEmailHelp" placeholder="Enter email address" required="required"></input>
+                </div>
+                <div class="form-group">
+                    <label for="EmailSubject">Email Subject</label>
+                    <textarea name="subject" class="form-control" id="EmailSubject" rows="1" required="required"
+                        placeholder="Subject"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="EmailBody">Email Body</label>
+                    <textarea name="body" class="form-control" id="EmailBody" rows="5" required="required"
+                        placeholder="Body"></textarea>
+                    <small id="InputEmailHelp" class="form-text text-muted">Your email will never be shared or
+                        sold.</small>
+                </div>
+                <div class="form-group" style="padding-top: .5rem;">
+                    <input type="submit" class="btn btn-primary btn-send" value="Send message">
+                </div>
+            </form>
+            <div class="form-messages">
+                <?php echo $result ?>
+            </div>
+        </div>
+        <p style="text-align: left !important; padding-top: 6rem; padding-left: 1rem;">Thank you for checking out my
+            portfolio. Please feel free to contact me. This website was made by Keith Ritter</p>
+    </div>
+    <div class="messages"></div>
+</body>
+
+</html>
