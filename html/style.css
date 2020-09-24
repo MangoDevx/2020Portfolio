@@ -115,3 +115,28 @@ p{
     border-radius: 1%;
     margin:auto;
 }
+
+.successContainer {
+    background: #343A40;
+    border-radius: 1%;
+    position: relative;
+    padding: 4vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    margin-top: 30vh;
+    font-size: 2.5vh;
+    vertical-align: middle;
+}
+
+.successButton {
+    width: 10vh;
+    height: 4vh;
+    font-size: 1.8vh;
+    margin: auto;
+    margin-top: 2vh;
+}

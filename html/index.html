@@ -109,9 +109,10 @@
         </div>
     </div>
     <div id="ContentSectionC">
-        <h1 id="accentColor" style="text-decoration: underline; padding-top: 2rem; padding-bottom: 2rem;">Email Me! (WIP)</h1>
+        <h1 id="accentColor" style="text-decoration: underline; padding-top: 2rem; padding-bottom: 2rem;">Email Me!
+            (WIP)</h1>
         <div class="container">
-            <form id="contact-form" method="post" action="contact.php" role="form" class="shadow">
+            <form id="contact-form" method="POST" action="contact.php" role="form" class="shadow">
                 <div class="form-group">
                     <label for="InputEmail">Email address</label>
                     <input name="email" type="email" class="form-control" id="InputEmail"
@@ -130,17 +131,13 @@
                         sold.</small>
                 </div>
                 <div class="form-group" style="padding-top: .5rem;">
-                    <input type="submit" class="btn btn-primary btn-send" value="Send message">
+                    <input type="submit" class="btn btn-primary" value="Send message">
                 </div>
             </form>
-            <div class="form-messages">
-                <?php echo $result ?>
-            </div>
         </div>
         <p style="text-align: left !important; padding-top: 6rem; padding-left: 1rem;">Thank you for checking out my
             portfolio. Please feel free to contact me. This website was made by Keith Ritter</p>
     </div>
-    <div class="messages"></div>
 </body>
 
 </html>
